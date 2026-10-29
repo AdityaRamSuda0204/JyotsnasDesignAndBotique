@@ -1,0 +1,195 @@
+.header {
+  position: relative;
+  z-index: 5;
+  color: var(--ifm-font-color-base);
+  background: var(--ifm-background-color);
+  border-bottom: 1px solid var(--store-border);
+}
+
+.utilityBar {
+  padding: 0.5rem var(--store-gutter);
+  color: #f9f6f1;
+  background: #302724;
+  font-size: 0.67rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mainRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 2.5rem);
+  max-width: var(--store-max-width);
+  min-height: 5.4rem;
+  margin: 0 auto;
+  padding: 0 var(--store-gutter);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.brandLogo {
+  display: block;
+  width: 3.25rem;
+  height: 3.25rem;
+  flex: 0 0 auto;
+  border: 1px solid var(--store-border);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.brandText {
+  display: grid;
+  gap: 0.2rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+}
+
+.brandText small {
+  color: var(--store-muted);
+  font-size: 0.62rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.navigation a {
+  color: var(--ifm-font-color-base);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: var(--store-accent);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  max-width: 15rem;
+  padding: 0.55rem 0.7rem;
+  color: var(--store-muted);
+  background: var(--store-surface);
+  border: 1px solid var(--store-border);
+}
+
+.search input {
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  color: var(--ifm-font-color-base);
+  background: transparent;
+  border: 0;
+  font-size: 0.76rem;
+  outline: 0;
+}
+
+.search input::placeholder {
+  color: var(--store-muted);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.iconButton {
+  position: relative;
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  color: var(--ifm-font-color-base);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  place-items: center;
+  text-decoration: none;
+}
+
+.iconButton:hover {
+  color: var(--store-accent);
+}
+
+.count {
+  position: absolute;
+  top: 0.05rem;
+  right: 0.05rem;
+  display: grid;
+  min-width: 1rem;
+  height: 1rem;
+  padding: 0 0.2rem;
+  color: #fff;
+  background: var(--store-accent);
+  border-radius: 999px;
+  font-size: 0.6rem;
+  place-items: center;
+}
+
+.menuButton {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .mainRow {
+    grid-template-columns: 1fr auto auto;
+  }
+
+  .navigation {
+    gap: 1rem;
+  }
+
+  .search {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .mainRow {
+    grid-template-columns: 1fr auto;
+    min-height: 4.8rem;
+  }
+
+  .navigation {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: none;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem var(--store-gutter) 1rem;
+    background: var(--ifm-background-color);
+    border-bottom: 1px solid var(--store-border);
+  }
+
+  .navigationOpen {
+    display: flex;
+  }
+
+  .navigation a {
+    padding: 0.8rem 0;
+  }
+
+  .menuButton {
+    display: grid;
+  }
+}

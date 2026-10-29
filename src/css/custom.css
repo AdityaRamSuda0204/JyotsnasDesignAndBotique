@@ -1,0 +1,72 @@
+:root {
+  --ifm-color-primary: #855d48;
+  --ifm-color-primary-dark: #76513e;
+  --ifm-color-primary-darker: #6f4c3a;
+  --ifm-color-primary-darkest: #5b3e2f;
+  --ifm-color-primary-light: #946b55;
+  --ifm-color-primary-lighter: #9b715a;
+  --ifm-color-primary-lightest: #ac8975;
+  --ifm-background-color: #f8f6f2;
+  --ifm-background-surface-color: #fffdfb;
+  --ifm-font-color-base: #28211d;
+  --ifm-font-family-base: 'Avenir Next', Avenir, 'Segoe UI', sans-serif;
+  --ifm-code-font-size: 95%;
+  --store-max-width: 1440px;
+  --store-gutter: clamp(1.1rem, 5vw, 5rem);
+  --store-display-font: 'Bodoni 72', Didot, 'Times New Roman', serif;
+  --store-surface: #fffdfb;
+  --store-muted-surface: #eee9e3;
+  --store-border: #e6dfd8;
+  --store-muted: #786e67;
+  --store-accent: #855d48;
+  --store-on-accent: #fff;
+  --store-star: #a77b39;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #d3a889;
+  --ifm-color-primary-dark: #c79672;
+  --ifm-color-primary-darker: #c18c64;
+  --ifm-color-primary-darkest: #ad7449;
+  --ifm-color-primary-light: #dfbaa0;
+  --ifm-color-primary-lighter: #e5c4ad;
+  --ifm-color-primary-lightest: #f0ddcf;
+  --ifm-background-color: #191614;
+  --ifm-background-surface-color: #221e1b;
+  --ifm-font-color-base: #f1eae4;
+  --store-surface: #221e1b;
+  --store-muted-surface: #302a26;
+  --store-border: #39312c;
+  --store-muted: #b7aaa0;
+  --store-accent: #d3a889;
+  --store-on-accent: #211711;
+  --store-star: #d7b36c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--ifm-font-color-base);
+  background: var(--ifm-background-color);
+}
+
+.navbar {
+  display: none;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+:focus-visible {
+  outline: 2px solid var(--store-accent);
+  outline-offset: 3px;
+}

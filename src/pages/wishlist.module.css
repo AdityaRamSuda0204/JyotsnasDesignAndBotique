@@ -1,0 +1,78 @@
+.page {
+  max-width: var(--store-max-width);
+  min-height: 70vh;
+  margin: 0 auto;
+  padding: 4rem var(--store-gutter) 6rem;
+}
+
+.intro {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 0.8rem;
+  color: var(--store-accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.intro h1 {
+  margin: 0;
+  font-family: var(--store-display-font);
+  font-size: clamp(2.6rem, 6vw, 4.5rem);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+}
+
+.intro > p:last-child,
+.empty p {
+  color: var(--store-muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.empty {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.empty h2 {
+  font-family: var(--store-display-font);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.empty a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+  color: var(--store-on-accent);
+  background: var(--store-accent);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+@media (max-width: 996px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

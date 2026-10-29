@@ -1,0 +1,114 @@
+.page {
+  max-width: var(--store-max-width);
+  min-height: 70vh;
+  margin: 0 auto;
+  padding: 4rem var(--store-gutter) 6rem;
+}
+
+.intro {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 0.8rem;
+  color: var(--store-accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.intro h1 {
+  margin: 0;
+  font-family: var(--store-display-font);
+  font-size: clamp(2.6rem, 6vw, 4.5rem);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+}
+
+.intro > p:last-child {
+  color: var(--store-muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  min-height: 28rem;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1.5rem;
+  color: #fff;
+  background: #302724;
+  text-decoration: none;
+}
+
+.card::after {
+  position: absolute;
+  inset: 25% 0 0;
+  background: linear-gradient(transparent, rgb(0 0 0 / 72%));
+  content: '';
+}
+
+.card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 300ms ease;
+}
+
+.card:hover img {
+  transform: scale(1.04);
+}
+
+.number,
+.card h2,
+.count {
+  position: relative;
+  z-index: 1;
+}
+
+.number {
+  position: absolute;
+  bottom: 6.4rem;
+  left: 1.5rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+}
+
+.card h2 {
+  margin: 0;
+  font-family: var(--store-display-font);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-left: auto;
+  font-size: 0.76rem;
+}
+
+.count span {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 760px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: 22rem;
+  }
+}

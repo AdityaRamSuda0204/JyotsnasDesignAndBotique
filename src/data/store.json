@@ -1,0 +1,157 @@
+{
+  "config": {
+    "whatsappCountryCode": "91",
+    "whatsappNumber": "8019800204",
+    "storeName": "Jyotsna Designs"
+  },
+  "home": {
+    "eyebrow": "Spring / Summer house edit",
+    "title": "Dress like every entrance matters.",
+    "description": "Discover premium ready-to-wear, curated footwear, and statement accessories with a polished, modern luxury feel.",
+    "image": "/img/store/hero.webp",
+    "imageAlt": "Fashion editorial portrait in a warm, sunlit setting",
+    "highlights": [
+      "Curated premium drops every week",
+      "Personal styling, made easy",
+      "Complimentary shipping over ₹5,000"
+    ]
+  },
+  "categories": [
+    {
+      "id": "ready-to-wear",
+      "name": "Ready to wear",
+      "image": "/img/store/street-style.webp"
+    },
+    {
+      "id": "footwear",
+      "name": "Footwear",
+      "image": "/img/store/heels.webp"
+    },
+    {
+      "id": "accessories",
+      "name": "Accessories",
+      "image": "/img/store/sunglasses.webp"
+    }
+  ],
+  "products": [
+    {
+      "id": "wrap-001",
+      "slug": "cashmere-blend-wrap",
+      "name": "Cashmere Blend Wrap",
+      "brand": "North Edit",
+      "description": "An oversized luxury travel wrap.",
+      "image": "/img/store/wrap.webp",
+      "imageAlt": "Soft neutral outerwear styled for travel",
+      "priceType": "fixed",
+      "price": 3023,
+      "compareAtPrice": 3599,
+      "rating": 4.8,
+      "reviewCount": 42,
+      "categoryId": "accessories",
+      "badge": "Bestseller",
+      "sortOrder": 1
+    },
+    {
+      "id": "blazer-002",
+      "slug": "noir-tailored-blazer",
+      "name": "Noir Tailored Blazer",
+      "brand": "Veloura Atelier",
+      "description": "A softly structured evening blazer.",
+      "image": "/img/store/blazer.webp",
+      "imageAlt": "Tailored blush trousers from a contemporary fashion edit",
+      "priceType": "fixed",
+      "price": 5739,
+      "compareAtPrice": 6999,
+      "rating": 5,
+      "reviewCount": 1,
+      "categoryId": "ready-to-wear",
+      "badge": "New arrival",
+      "sortOrder": 2
+    },
+    {
+      "id": "dress-003",
+      "slug": "silk-column-dress",
+      "name": "Silk Column Dress",
+      "brand": "Maison Mira",
+      "description": "Fluid silk with a quietly dramatic drape.",
+      "image": "/img/store/silk-dress.webp",
+      "imageAlt": "Elegant evening dress in a refined silhouette",
+      "priceType": "fixed",
+      "price": 8490,
+      "compareAtPrice": 9990,
+      "rating": 4.9,
+      "reviewCount": 18,
+      "categoryId": "ready-to-wear",
+      "badge": "Limited edit",
+      "sortOrder": 3
+    },
+    {
+      "id": "shoe-004",
+      "slug": "sculpted-leather-heel",
+      "name": "Sculpted Leather Heel",
+      "brand": "Forma Studio",
+      "description": "A modern heel made for long evenings.",
+      "image": "/img/store/heels.webp",
+      "imageAlt": "Minimal leather heels in a neutral shade",
+      "priceType": "fixed",
+      "price": 4290,
+      "compareAtPrice": 4990,
+      "rating": 4.7,
+      "reviewCount": 26,
+      "categoryId": "footwear",
+      "badge": "House favourite",
+      "sortOrder": 4
+    },
+    {
+      "id": "bag-005",
+      "slug": "everyday-arc-bag",
+      "name": "Everyday Arc Bag",
+      "brand": "Atelier One",
+      "description": "A sculptural carryall in supple vegan leather.",
+      "image": "/img/store/handbag.webp",
+      "imageAlt": "Structured handbag with a clean, modern shape",
+      "priceType": "fixed",
+      "price": 6490,
+      "compareAtPrice": 7490,
+      "rating": 4.6,
+      "reviewCount": 12,
+      "categoryId": "accessories",
+      "badge": "New arrival",
+      "sortOrder": 5
+    },
+    {
+      "id": "shirt-006",
+      "slug": "linen-weekend-shirt",
+      "name": "Linen Weekend Shirt",
+      "brand": "North Edit",
+      "description": "An easy, breathable layer in softened linen.",
+      "image": "/img/store/linen-shirt.webp",
+      "imageAlt": "Relaxed linen shirt in a warm neutral tone",
+      "priceType": "fixed",
+      "price": 2890,
+      "compareAtPrice": 3290,
+      "rating": 4.8,
+      "reviewCount": 31,
+      "categoryId": "ready-to-wear",
+      "badge": "Everyday essential",
+      "sortOrder": 6
+    },
+    {
+      "id": "custom-007",
+      "slug": "custom-occasion-design",
+      "name": "Custom Occasion Design",
+      "brand": "Jyotsna Atelier",
+      "description": "A made-to-order design created around your occasion, fit, and chosen details.",
+      "image": "/img/store/custom-design.webp",
+      "imageAlt": "Custom occasionwear styled as a fashion editorial",
+      "priceType": "range",
+      "minPrice": 6000,
+      "maxPrice": 8000,
+      "rating": 0,
+      "reviewCount": 0,
+      "categoryId": "ready-to-wear",
+      "badge": "Made to order",
+      "sortOrder": 7
+    }
+  ]
+}
